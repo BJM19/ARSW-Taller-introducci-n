@@ -5,7 +5,7 @@ import java.io.*;
 
 
 /**
- * Unit test for count lines app
+ * Pruebas unitarias para ContarLineas
  */
 public class ContarLineasTest extends TestCase
 {
