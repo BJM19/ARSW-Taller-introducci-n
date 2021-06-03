@@ -24,7 +24,7 @@ public class ContarLineas
             String tipo  = args[0];
             File archivo = new File(args[1]);
             try {
-                int cantidad = LeerLineas.muestraContenido(tipo, archivo);
+                int cantidad = LeerLineas.contenido(tipo, archivo);
                 if (tipo.equals("loc")) {
                     System.out.println("El número de lineas de codigo son: " + cantidad+".");
                 }

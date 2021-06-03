@@ -7,17 +7,17 @@ import java.io.*;
  * Esta clase Lee el archivo que obtiene de la clase principal y cuenta el número de líneas si el tipo de conteo es LOC o PHY
  */
 public class LeerLineas {
-    private static String cadena;
+    private static String string;
 
     /**
      * Clase principal de leerLineas, recibe el archivo y cuenta el número de líneas que dependen de su tipo de recuento
      * @param tipo
      * @param archivo
-     * @return
+     * @return cantidad de lineas dependiendo el tipo
      * @throws FileNotFoundException
      * @throws IOException
      */
-    public static int muestraContenido( String tipo,File archivo) throws FileNotFoundException, IOException {
+    public static int contenido( String tipo,File archivo) throws FileNotFoundException, IOException {
         int cantidad = 0;
         Scanner scanner = new Scanner(archivo);
         FileReader file = new FileReader(archivo);
@@ -29,8 +29,8 @@ public class LeerLineas {
             }
         }
         else if (tipo.equals("loc")){
-            while((cadena = buffer.readLine())!=null) {
-                if (!(cadena.startsWith("/") || (cadena.isEmpty()) || (cadena.startsWith("*") ))){
+            while((string = buffer.readLine())!=null) {
+                if (!(string.startsWith("/") || (string.isEmpty()) || (string.startsWith("*") ))){
                     cantidad=cantidad+1;
                 }
             }

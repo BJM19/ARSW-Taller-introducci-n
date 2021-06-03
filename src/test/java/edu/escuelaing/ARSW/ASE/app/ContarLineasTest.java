@@ -5,7 +5,7 @@ import java.io.*;
 
 
 /**
- * Pruebas unitarias para ContarLineas
+ * Unit test for count lines app
  */
 public class ContarLineasTest extends TestCase
 {
@@ -18,7 +18,7 @@ public class ContarLineasTest extends TestCase
     public void testLoc() throws IOException {
         int resultado=8;
         File ruta = new File("./src/test/resource/p2.txt");
-        int resultado2= LeerLineas.muestraContenido("loc",ruta);
+        int resultado2= LeerLineas.contenido("loc",ruta);
         assertEquals(resultado,resultado2);
     }
     /**
@@ -38,7 +38,7 @@ public class ContarLineasTest extends TestCase
     public void testPhy() throws IOException {
         int resultadoEsperado=15;
         File ruta = new File("./src/test/resource/p1.txt");
-        int resultado2= LeerLineas.muestraContenido("phy",ruta);
+        int resultado2= LeerLineas.contenido("phy",ruta);
         assertEquals(resultadoEsperado,resultado2);
     }
     /**
@@ -49,7 +49,7 @@ public class ContarLineasTest extends TestCase
         boolean bool = true;
         try {
             File ruta = new File("./src/test/resource/p1.txt");
-            int resultado= LeerLineas.muestraContenido("loc",ruta);
+            int resultado= LeerLineas.contenido("loc",ruta);
         } catch (FileNotFoundException e) {
             bool = false;
         }
@@ -64,16 +64,10 @@ public class ContarLineasTest extends TestCase
         boolean bool = false;
         try {
             File ruta = new File("./src/main/resources/noexiste.txt");
-            int resultado= LeerLineas.muestraContenido("loc",ruta);
+            int resultado= LeerLineas.contenido("loc",ruta);
         } catch (FileNotFoundException e) {
             bool = true;
         }
         assertTrue(bool);
     }
-
-
-
-
-
-
 }
