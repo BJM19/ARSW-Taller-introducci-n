@@ -25,6 +25,9 @@ Java
 
 * **Brayan Alexis Jiménez Moya** 
 
+## Pruebas
+![](imgs/pruebas.png)
+
 ## Licencia
 
 En este proyecto se usó la licencia GNU - se puede ver [LICENSE.txt](LICENSE.txt) para más detalles.
