@@ -29,7 +29,7 @@ Java
 ![](imgs/pruebas.png)
 ## LOC
 90 lineas en 4 horas
-22,5 lineas por hora
+, 22,5 lineas por hora
 ## Licencia
 
 En este proyecto se usó la licencia GNU - se puede ver [LICENSE.txt](LICENSE.txt) para más detalles.
